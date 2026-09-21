@@ -1,0 +1,294 @@
+Student Name: Rushi S. Rajnoor
+Mobile Number: 9579885136
+Batch AI&DS( 9011) Date: 21/09/2026
+
+
+
+
+
+
+STREAMFLIX — MYSQL FUN + COMPANY-LEVEL CHALLENGE
+COMPLETE SQL SOLUTIONS
+
+TABLE: movies
+
+============================================================
+DATABASE SETUP
+============================================================
+
+CREATE DATABASE streamflix;
+USE streamflix;
+
+CREATE TABLE movies (
+    movie_id INT PRIMARY KEY,
+    title VARCHAR(100),
+    genre VARCHAR(50),
+    language VARCHAR(30),
+    rating DOUBLE,
+    price DOUBLE,
+    views INT,
+    release_year INT,
+    director VARCHAR(100),
+    production_company VARCHAR(100)
+);
+
+============================================================
+LEVEL 1 — MOVIE DETECTIVE
+============================================================
+
+Task 1
+SELECT * FROM movies
+WHERE rating > 8;
+
+Task 2
+SELECT * FROM movies
+WHERE price < 150;
+
+Task 3
+SELECT * FROM movies
+WHERE language = 'Hindi';
+
+Task 4
+SELECT * FROM movies
+WHERE views > 1000000;
+
+Task 5
+SELECT * FROM movies
+WHERE release_year > 2015;
+
+Task 6
+SELECT * FROM movies
+WHERE rating BETWEEN 8 AND 8.5;
+
+Task 7
+SELECT * FROM movies
+WHERE genre IN ('Action', 'Comedy', 'Thriller');
+
+Task 8
+SELECT * FROM movies
+WHERE director = 'S. S. Rajamouli';
+
+Task 9
+SELECT * FROM movies
+WHERE production_company = 'Hombale Films';
+
+Task 10
+SELECT * FROM movies
+WHERE production_company = 'Arka Media Works';
+
+
+============================================================
+LEVEL 2 — STREAMING RECOMMENDATION TEAM
+============================================================
+
+Task 11
+SELECT * FROM movies
+ORDER BY views DESC
+LIMIT 5;
+
+Task 12
+SELECT * FROM movies
+ORDER BY price ASC
+LIMIT 5;
+
+Task 13
+SELECT * FROM movies
+ORDER BY rating DESC;
+
+Task 14
+SELECT DISTINCT language
+FROM movies;
+
+Task 15
+SELECT title AS Movie,
+       rating AS IMDb_Rating
+FROM movies;
+
+Task 16
+SELECT title, director, production_company
+FROM movies;
+
+Task 17
+SELECT * FROM movies
+ORDER BY production_company ASC,
+         rating DESC;
+
+Task 18
+SELECT * FROM movies
+WHERE release_year > 2015
+ORDER BY rating DESC
+LIMIT 5;
+
+Task 19
+SELECT * FROM movies
+WHERE language = 'Telugu'
+ORDER BY views DESC
+LIMIT 3;
+
+Task 20
+SELECT * FROM movies
+ORDER BY price DESC
+LIMIT 5;
+
+
+============================================================
+LEVEL 3 — FIND THE HIDDEN MOVIES
+============================================================
+
+Task 21
+SELECT * FROM movies
+WHERE title LIKE 'A%';
+
+Task 22
+SELECT * FROM movies
+WHERE title LIKE '%a';
+
+Task 23
+SELECT * FROM movies
+WHERE title LIKE '%Baahubali%';
+
+Task 24
+SELECT * FROM movies
+WHERE title LIKE '%Dhoom%';
+
+Task 25
+SELECT * FROM movies
+WHERE title LIKE '_____';
+
+Task 26
+SELECT DISTINCT director
+FROM movies
+WHERE director LIKE '%Raj%';
+
+Task 27
+SELECT DISTINCT production_company
+FROM movies
+WHERE production_company LIKE '%Films%';
+
+Task 28
+SELECT * FROM movies
+WHERE language LIKE 'T%';
+
+
+============================================================
+LEVEL 4 — BUSINESS TEAM
+============================================================
+
+Task 29
+SELECT * FROM movies
+WHERE price > 150
+  AND rating > 8;
+
+Task 30
+SELECT * FROM movies
+WHERE views > 1000000
+   OR rating > 8.5;
+
+Task 31
+SELECT * FROM movies
+WHERE NOT genre = 'Horror';
+
+Task 32
+SELECT * FROM movies
+WHERE release_year BETWEEN 2015 AND 2020;
+
+Task 33
+SELECT * FROM movies
+WHERE price BETWEEN 100 AND 200;
+
+Task 34
+SELECT * FROM movies
+WHERE language IN ('Hindi', 'Telugu');
+
+Task 35
+SELECT * FROM movies
+WHERE genre = 'Action'
+  AND views > 1000000;
+
+Task 36
+SELECT * FROM movies
+WHERE director = 'S. S. Rajamouli'
+  AND rating > 8;
+
+Task 37
+SELECT * FROM movies
+WHERE production_company = 'Hombale Films'
+  AND release_year > 2019;
+
+Task 38
+SELECT * FROM movies
+WHERE director <> 'S. S. Rajamouli';
+
+
+============================================================
+LEVEL 5 — BOSS CHALLENGES
+============================================================
+
+Challenge 1 — Hidden Gem
+SELECT * FROM movies
+WHERE rating > 8
+  AND views < 500000;
+
+Challenge 2 — Cheap & Popular
+SELECT * FROM movies
+WHERE price < 150
+  AND views > 1000000;
+
+Challenge 3 — Recommendation Engine
+SELECT * FROM movies
+WHERE language = 'English'
+  AND release_year > 2015
+  AND rating > 8.5;
+
+Challenge 4 — Trending Movies
+SELECT * FROM movies
+WHERE release_year > 2020
+ORDER BY views DESC
+LIMIT 3;
+
+Challenge 5 — Premium Movies
+SELECT * FROM movies
+WHERE price > (
+    SELECT AVG(price)
+    FROM movies
+);
+
+Challenge 6 — Director Spotlight
+SELECT * FROM movies
+WHERE director = 'S. S. Rajamouli'
+ORDER BY release_year ASC;
+
+Challenge 7 — Production House Report
+SELECT title,
+       release_year AS year,
+       rating,
+       views
+FROM movies
+WHERE production_company = 'Hombale Films';
+
+Challenge 8 — Franchise Search
+SELECT * FROM movies
+WHERE title LIKE '%Baahubali%'
+   OR title LIKE '%KGF%';
+
+
+============================================================
+FINAL BOSS — CEO CHALLENGE
+============================================================
+
+SELECT title,
+       genre,
+       rating,
+       price,
+       views,
+       director,
+       production_company
+FROM movies
+WHERE rating > 8
+  AND views > 500000
+  AND price BETWEEN 100 AND 250
+ORDER BY views DESC
+LIMIT 5;
+
+
+
