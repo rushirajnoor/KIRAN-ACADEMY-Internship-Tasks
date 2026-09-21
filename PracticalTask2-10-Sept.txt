@@ -1,0 +1,365 @@
+Student Name : Rushi Sunil Rajnoor
+Mobile Number: 9579885136
+Batch : 9011 
+Date : 12/09/2026
+
+
+
+-- ============================================================
+-- E-COMMERCE PRODUCT INVENTORY MANAGEMENT
+-- SQL DDL + DML + OPERATORS PRACTICAL
+-- ============================================================
+
+-- ============================================================
+-- PART A: DATABASE & TABLE CREATION
+-- ============================================================
+
+-- 1. Create database
+CREATE DATABASE ecommerce_db;
+
+-- 2. Select database
+USE ecommerce_db;
+
+-- 3. Create table
+CREATE TABLE products (
+    product_id INT PRIMARY KEY,
+    product_name VARCHAR(100),
+    category VARCHAR(50),
+    brand VARCHAR(50),
+    price DECIMAL(10,2),
+    quantity INT,
+    city VARCHAR(50),
+    status VARCHAR(20)
+);
+
+-- 4. Display table structure
+DESC products;
+
+-- Alternative:
+-- DESCRIBE products;
+
+-- 5. Display all tables
+SHOW TABLES;
+
+
+-- ============================================================
+-- PART B: INSERT OPERATIONS
+-- ============================================================
+
+-- 6-15. Insert all product records
+INSERT INTO products
+(product_id, product_name, category, brand, price, quantity, city, status)
+VALUES
+(201, 'Galaxy M55', 'Mobile', 'Samsung', 32000, 15, 'Pune', 'Available'),
+(202, 'iPhone 15', 'Mobile', 'Apple', 65000, 8, 'Mumbai', 'Available'),
+(203, 'Moto Edge 50', 'Mobile', 'Motorola', 28000, 20, 'Pune', 'Available'),
+(204, 'Inspiron 15', 'Laptop', 'Dell', 58000, 6, 'Nashik', 'Available'),
+(205, 'IdeaPad Slim 3', 'Laptop', 'Lenovo', 45000, 12, 'Mumbai', 'Available'),
+(206, 'Galaxy Watch 6', 'Watch', 'Samsung', 22000, 4, 'Pune', 'Out of Stock'),
+(207, 'Apple Watch SE', 'Watch', 'Apple', 30000, 10, 'Mumbai', 'Available'),
+(208, 'Redmi Pad', 'Tablet', 'Xiaomi', 24000, 18, 'Pune', 'Available'),
+(209, 'OnePlus Pad', 'Tablet', 'OnePlus', 35000, 5, 'Nashik', 'Available'),
+(210, 'Bluetooth Speaker', 'Accessories', 'JBL', 7000, 25, 'Mumbai', 'Available');
+
+
+-- ============================================================
+-- PART C: BASIC SELECT & OPERATOR PRACTICE
+-- ============================================================
+
+-- 16. Display all records
+SELECT * FROM products;
+
+-- 17. Display only product_name
+SELECT product_name FROM products;
+
+-- 18. Display product_name and price
+SELECT product_name, price
+FROM products;
+
+-- 19. Display product_name, category, brand and price
+SELECT product_name, category, brand, price
+FROM products;
+
+-- 20. Products available in Pune
+SELECT *
+FROM products
+WHERE city = 'Pune';
+
+-- 21. Products available in Mumbai
+SELECT *
+FROM products
+WHERE city = 'Mumbai';
+
+-- 22. All Mobile products
+SELECT *
+FROM products
+WHERE category = 'Mobile';
+
+-- 23. All Laptop products
+SELECT *
+FROM products
+WHERE category = 'Laptop';
+
+-- 24. Price greater than 30000
+SELECT *
+FROM products
+WHERE price > 30000;
+
+-- 25. Price less than 30000
+SELECT *
+FROM products
+WHERE price < 30000;
+
+-- 26. Price equal to 35000
+SELECT *
+FROM products
+WHERE price = 35000;
+
+-- 27. Price greater than or equal to 45000
+SELECT *
+FROM products
+WHERE price >= 45000;
+
+-- 28. Price less than or equal to 30000
+SELECT *
+FROM products
+WHERE price <= 30000;
+
+-- 29. Quantity greater than 10
+SELECT *
+FROM products
+WHERE quantity > 10;
+
+-- 30. Quantity less than 10
+SELECT *
+FROM products
+WHERE quantity < 10;
+
+
+-- ============================================================
+-- PART D: LOGICAL OPERATORS
+-- ============================================================
+
+-- 31. Pune AND Mobile category
+SELECT *
+FROM products
+WHERE city = 'Pune'
+AND category = 'Mobile';
+
+-- 32. Mumbai AND Available status
+SELECT *
+FROM products
+WHERE city = 'Mumbai'
+AND status = 'Available';
+
+-- 33. Price > 30000 AND quantity > 5
+SELECT *
+FROM products
+WHERE price > 30000
+AND quantity > 5;
+
+-- 34. Price >= 30000 AND price <= 60000
+SELECT *
+FROM products
+WHERE price >= 30000
+AND price <= 60000;
+
+-- 35. Products from Pune OR Mumbai
+SELECT *
+FROM products
+WHERE city = 'Pune'
+OR city = 'Mumbai';
+
+-- 36. Mobile OR Laptop
+SELECT *
+FROM products
+WHERE category = 'Mobile'
+OR category = 'Laptop';
+
+-- 37. Quantity < 10 OR price > 50000
+SELECT *
+FROM products
+WHERE quantity < 10
+OR price > 50000;
+
+-- 38. Mobile AND price > 30000
+SELECT *
+FROM products
+WHERE category = 'Mobile'
+AND price > 30000;
+
+-- 39. Samsung OR Apple
+SELECT *
+FROM products
+WHERE brand = 'Samsung'
+OR brand = 'Apple';
+
+-- 40. Pune AND Available AND quantity > 10
+SELECT *
+FROM products
+WHERE city = 'Pune'
+AND status = 'Available'
+AND quantity > 10;
+
+
+-- ============================================================
+-- PART E: SLIGHTLY HIGHER OPERATOR LOGIC
+-- ============================================================
+
+-- 41. Price BETWEEN 25000 and 50000
+SELECT *
+FROM products
+WHERE price BETWEEN 25000 AND 50000;
+
+-- 42. Quantity BETWEEN 5 and 15
+SELECT *
+FROM products
+WHERE quantity BETWEEN 5 AND 15;
+
+-- 43. Category IN Mobile, Laptop, Tablet
+SELECT *
+FROM products
+WHERE category IN ('Mobile', 'Laptop', 'Tablet');
+
+-- 44. City IN Pune, Mumbai
+SELECT *
+FROM products
+WHERE city IN ('Pune', 'Mumbai');
+
+-- 45. Brand NOT Samsung
+SELECT *
+FROM products
+WHERE brand != 'Samsung';
+
+-- Alternative:
+-- SELECT * FROM products
+-- WHERE NOT brand = 'Samsung';
+
+-- 46. Status NOT Out of Stock
+SELECT *
+FROM products
+WHERE status != 'Out of Stock';
+
+-- 47. Price NOT EQUAL TO 30000
+SELECT *
+FROM products
+WHERE price != 30000;
+
+-- 48. Product name starts with Galaxy
+SELECT *
+FROM products
+WHERE product_name LIKE 'Galaxy%';
+
+-- 49. Product name contains Pad
+SELECT *
+FROM products
+WHERE product_name LIKE '%Pad%';
+
+-- 50. Mobile AND (price > 30000 OR quantity > 15)
+SELECT *
+FROM products
+WHERE category = 'Mobile'
+AND (price > 30000 OR quantity > 15);
+
+
+-- ============================================================
+-- PART F: UPDATE OPERATIONS
+-- ============================================================
+
+-- 51. Update Galaxy M55 price from 32000 to 34000
+-- Use PRIMARY KEY in WHERE to work safely with MySQL Workbench.
+UPDATE products
+SET price = 34000
+WHERE product_id = 201;
+
+-- 52. Update iPhone 15 quantity to 12
+UPDATE products
+SET quantity = 12
+WHERE product_id = 202;
+
+-- 53. Change Galaxy Watch 6 status to Available
+UPDATE products
+SET status = 'Available'
+WHERE product_id = 206;
+
+-- 54. Increase price of all Mobile products by 2000
+UPDATE products
+SET price = price + 2000
+WHERE category = 'Mobile';
+
+-- 55. Increase quantity of all Pune products by 5
+UPDATE products
+SET quantity = quantity + 5
+WHERE city = 'Pune';
+
+-- 56. Set status to Out of Stock where quantity < 5
+UPDATE products
+SET status = 'Out of Stock'
+WHERE quantity < 5;
+
+
+-- ============================================================
+-- PART G: DELETE OPERATIONS
+-- ============================================================
+
+-- 57. Delete product_id 210
+DELETE FROM products
+WHERE product_id = 210;
+
+-- 58. Delete products with price less than 8000
+DELETE FROM products
+WHERE price < 8000;
+
+-- 59. Delete Out of Stock products with quantity < 5
+DELETE FROM products
+WHERE status = 'Out of Stock'
+AND quantity < 5;
+
+-- 60. Delete Tablets with price greater than 30000
+DELETE FROM products
+WHERE category = 'Tablet'
+AND price > 30000;
+
+
+-- ============================================================
+-- ADDITIONAL BASIC ALTER TABLE COMMANDS
+-- ============================================================
+
+-- Add a new column
+ALTER TABLE products
+ADD COLUMN email VARCHAR(100);
+
+-- Modify a column definition
+ALTER TABLE products
+MODIFY COLUMN product_name VARCHAR(150);
+
+-- Rename a column
+ALTER TABLE products
+RENAME COLUMN email TO supplier_email;
+
+-- Drop a column
+ALTER TABLE products
+DROP COLUMN supplier_email;
+
+-- Rename the table
+RENAME TABLE products TO product_details;
+
+-- Check renamed table
+SHOW TABLES;
+
+-- Query renamed table
+SELECT * FROM product_details;
+
+
+-- ============================================================
+-- IMPORTANT NOTES
+-- ============================================================
+-- 1. Strings/text values use single quotes: 'Pune'
+-- 2. Numbers do not need quotes: 30000
+-- 3. Always be careful with UPDATE and DELETE.
+-- 4. A missing WHERE can modify/delete every row.
+-- 5. product_id is PRIMARY KEY, so it is a good column to use
+--    in UPDATE/DELETE WHERE conditions.
+-- 6. Do not run DELETE tasks if you still need the original
+--    10-row dataset for further practice. Reinsert/reset it.
+-- ============================================================
