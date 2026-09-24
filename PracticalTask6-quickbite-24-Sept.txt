@@ -469,27 +469,23 @@ LIMIT 5;
 
 
 ============================================================
-FINAL BOSS — HOW TO THINK ABOUT IT
+FINAL BOSS 
 ============================================================
 
 1. SELECT
-   Decide which columns the CEO wants to see.
+   
 
 2. FROM restaurants
-   Get the data from the restaurants table.
+   
 
 3. WHERE
-   Apply all three business conditions:
    rating > 4.4
    orders_count > 10000
    avg_order_value BETWEEN 300 AND 700
 
 4. ORDER BY orders_count DESC
-   Put the restaurants with the highest order counts first.
+
 
 5. LIMIT 5
-   Keep only the top 5 rows after sorting.
 
-============================================================
-END
-============================================================
+
