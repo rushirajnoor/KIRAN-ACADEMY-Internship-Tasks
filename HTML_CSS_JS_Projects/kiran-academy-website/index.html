@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Courses in Pune — Get Placed in 4–6 Months | The Kiran Academy</title>
+    <meta name="description" content="The Kiran Academy — Pune's job-ready IT training. Java, Python, Testing, Data Science & Full Stack. 25,000+ placed. 4 branches + Live Online.">
+    <meta name="keywords" content="IT courses Pune, Java training Pune, Python Full Stack Pune, Software Testing course Pune, Data Science Pune, MERN Stack Pune, The Kiran Academy">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ═══ ANNOUNCEMENT RIBBON ═══ -->
+<div class="ribbon" id="ribbon">
+    <div class="ribbon__inner">
+        <span class="ribbon__star">★</span>
+        <span class="ribbon__text"><strong>New</strong> Full-Day Master Programs — Python & Java — Batch starts soon!</span>
+        <a href="#lead-form" class="ribbon__cta">Enroll Now →</a>
+        <button class="ribbon__close" id="ribbonClose" type="button" aria-label="Dismiss announcement">✕</button>
+    </div>
+</div>
+
+<!-- ═══ TOP STRIP ═══ -->
+<div class="top-strip">
+    <div class="container top-strip__inner">
+        <div class="top-strip__numbers">
+            <a class="top-strip__num" href="tel:+918888809416">📞 Karve Nagar: +91 8888809416</a>
+            <a class="top-strip__num top-strip__num--hide-mob" href="tel:+919673107070">📞 Hadapsar: +91 9673107070</a>
+            <a class="top-strip__num top-strip__num--hide-mob" href="tel:+918857055009">📞 Chinchwad: +91 8857055009</a>
+            <a class="top-strip__num top-strip__num--hide-mob" href="tel:+919529204783">📞 Nagpur: +91 9529204783</a>
+        </div>
+        <a class="top-strip__wa" href="https://wa.me/918888809416?text=Hi%2C+I+want+to+know+more+about+courses+at+The+Kiran+Academy" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp Us
+        </a>
+    </div>
+</div>
+
+<!-- ═══ HEADER / STICKY NAV ═══ -->
+<header class="site-header" id="siteHeader">
+    <nav class="main-nav">
+        <div class="container main-nav__inner">
+            <a class="brand" href="#" aria-label="The Kiran Academy home">
+                <span class="brand__icon">K</span>
+                <span class="brand__text">The Kiran<br><small>Academy</small></span>
+            </a>
+
+            <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+
+            <div class="nav-links" id="navPanel">
+                <div class="mega-parent">
+                    <button class="nav-link nav-link--primary" id="coursesBtn" type="button" aria-expanded="false">
+                        All Courses
+                        <svg class="nav-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                    </button>
+                    <div class="mega-menu" id="megaMenu">
+                        <div class="mega-menu__rail">
+                            <button class="mega-tab active" data-tab="placement">Placement Oriented</button>
+                            <button class="mega-tab" data-tab="data">Data Science & Analytics</button>
+                            <button class="mega-tab" data-tab="specialized">Specialized Courses</button>
+                            <button class="mega-tab" data-tab="management">Project Management</button>
+                            <button class="mega-tab" data-tab="mock">Mock Interview</button>
+                            <button class="mega-tab" data-tab="internship">Internship</button>
+                        </div>
+                        <div class="mega-menu__content">
+                            <!-- Placement Panel -->
+                            <div class="mega-panel active" data-panel="placement">
+                                <a class="mega-card" href="#courses">
+                                    <span class="mega-card__tag">Placement Oriented</span>
+                                    <strong>Java Full Stack Development</strong>
+                                    <small>Master Core Java, Spring Boot, Hibernate, REST APIs, front-end basics, MySQL, and deployable projects.</small>
+                                    <span class="mega-card__cta">Learn more →</span>
+                                </a>
+                                <a class="mega-card" href="#courses">
+                                    <span class="mega-card__tag">Placement Oriented</span>
+                                    <strong>Python Full Stack Development</strong>
+                                    <small>Build practical Python, Django/Flask, database, REST API, and front-end skills with capstone projects.</small>
+                                    <span class="mega-card__cta">Learn more →</span>
+                                </a>
+                                <a class="mega-card" href="#courses">
+                                    <span class="mega-card__tag">Placement Oriented</span>
+                                    <strong>Software Testing</strong>
+                                    <small>Learn manual testing, Selenium automation, TestNG, Jira, API testing, and real QA workflows.</small>
+                                    <span class="mega-card__cta">Learn more →</span>
+                                </a>
+                                <a class="mega-card" href="#courses">
+                                    <span class="mega-card__tag">Specialized</span>
+                                    <strong>MERN Full Stack Development</strong>
+                                    <small>Build modern web apps using React, Node.js, Express, MongoDB, REST APIs, and deployment pipelines.</small>
+                                    <span class="mega-card__cta">Learn more →</span>
+                                </a>
+                            </div>
+                            <!-- Data Panel -->
+                            <div class="mega-panel" data-panel="data">
+                                <a class="mega-card" href="#courses">
+                                    <span class="mega-card__tag">Data Science</span>
+                                    <strong>Data Science & Machine Learning</strong>
+                                    <small>Python, statistics, ML model building, Pandas, visualization, and applied data science projects.</small>
+                                    <span class="mega-card__cta">Learn more →</span>
+                                </a>
+                                <a class="mega-card" href="#courses">
+                                    <span class="mega-card__tag">Analytics</span>
+                                    <strong>Data Analytics</strong>
+                                    <small>Turn raw data into business decisions with Excel, SQL, Python basics, Power BI dashboards, and reporting.</small>
+                                    <span class="mega-card__cta">Learn more →</span>
+                                </a>
+                            </div>
+                            <!-- Specialized Panel -->
+                            <div class="mega-panel" data-panel="specialized">
+                                <a class="mega-card" href="#courses">
+                                    <span class="mega-card__tag">Specialized</span>
+                                    <strong>MERN Full Stack Development</strong>
+                                    <small>React, Node.js, Express, MongoDB, REST APIs, and real deployment pipelines.</small>
+                                    <span class="mega-card__cta">Learn more →</span>
+                                </a>
+                                <a class="mega-card" href="#courses">
+                                    <span class="mega-card__tag">Specialized</span>
+                                    <strong>Advanced Java J2EE</strong>
+                                    <small>Enterprise Java with Spring Boot, Hibernate, Microservices, and cloud deployment.</small>
+                                    <span class="mega-card__cta">Learn more →</span>
+                                </a>
+                            </div>
+                            <!-- Management Panel -->
+                            <div class="mega-panel" data-panel="management">
+                                <a class="mega-card" href="#courses">
+                                    <span class="mega-card__tag">Professional Certification</span>
+                                    <strong>CSM, ITIL & Corporate Programs</strong>
+                                    <small>Certification programs and custom company training tracks.</small>
+                                    <span class="mega-card__cta">Learn more →</span>
+                                </a>
+                            </div>
+                            <!-- Mock Interview Panel -->
+                            <div class="mega-panel" data-panel="mock">
+                                <a class="mega-card" href="#courses">
+                                    <span class="mega-card__tag">Special Programme</span>
+                                    <strong>Mock Interview Programme</strong>
+                                    <small>15+ live mock interviews per student. Written feedback. Online & offline. ₹10,000.</small>
+                                    <span class="mega-card__cta">View programme →</span>
+                                </a>
+                            </div>
+                            <!-- Internship Panel -->
+                            <div class="mega-panel" data-panel="internship">
+                                <a class="mega-card" href="#courses">
+                                    <span class="mega-card__tag">College Internship</span>
+                                    <strong>Industry Internship Programme</strong>
+                                    <small>Real live projects for 2nd & 3rd year students. Java, Python, Testing, Data, React. ₹10,000.</small>
+                                    <span class="mega-card__cta">View programme →</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="nav-link" href="#placements">Placements</a>
+                <a class="nav-link" href="#success-stories">Success Stories</a>
+                <a class="nav-link" href="#why-us">Why Us</a>
+                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link nav-link--cta" href="#lead-form">Book Free Demo</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- ═══ STICKY DEMO BAR (MOBILE) ═══ -->
+<div class="sticky-demo-bar" id="stickyDemo">
+    <span>🎓 Free Demo Class — No Fees</span>
+    <a href="#lead-form" class="sticky-demo-btn">Book Now</a>
+</div>
+
+<main>
+
+<!-- ═══ HERO ═══ -->
+<section class="hero" id="hero">
+    <div class="hero__bg-shapes">
+        <div class="hero__shape hero__shape--1"></div>
+        <div class="hero__shape hero__shape--2"></div>
+        <div class="hero__shape hero__shape--3"></div>
+    </div>
+    <div class="container hero__grid">
+        <div class="hero__copy">
+            <div class="hero__badge">
+                <span class="badge-dot"></span>
+                <span>#1 IT Training Institute in Pune — Since 2012</span>
+            </div>
+            <h1 class="hero__title">
+                Land Your Dream<br>
+                <span class="hero__highlight">Software Job</span><br>
+                in Pune in 4–6 Months
+            </h1>
+            <p class="hero__sub">Live classes with working industry trainers. Real projects for your portfolio. Placement support until you're hired — not just until your course ends.</p>
+            <ul class="hero__bullets">
+                <li><span class="hb-check">✓</span> Small batches — your trainer knows your name</li>
+                <li><span class="hb-check">✓</span> Train on tools companies actually use today</li>
+                <li><span class="hb-check">✓</span> Mock interviews + resume reviews included</li>
+            </ul>
+            <div class="hero__cta-row">
+                <a class="btn btn--accent btn--lg" href="#lead-form">Book Free Demo Class →</a>
+                <a class="btn btn--outline" href="tel:+918888809416">📞 +91 8888809416</a>
+            </div>
+            <div class="hero__chips">
+                <span class="hero__chip">⭐ 4.8 Google Rating</span>
+                <span class="hero__chip">✓ 14+ Years in Pune</span>
+                <span class="hero__chip">🎓 25,000+ Alumni</span>
+            </div>
+        </div>
+
+        <div class="hero__form-wrap" id="lead-form">
+            <div class="lead-card">
+                <div class="lead-card__header">
+                    <strong>Book a Free Demo Class</strong>
+                    <span>No payment. No commitment. Just clarity.</span>
+                </div>
+                <form class="lead-form" id="leadForm" novalidate>
+                    <div class="form-row-2">
+                        <div class="form-field">
+                            <label for="lf-name">Full Name <span class="req">*</span></label>
+                            <input type="text" id="lf-name" name="name" placeholder="Your full name" required maxlength="60" autocomplete="name">
+                        </div>
+                        <div class="form-field">
+                            <label for="lf-phone">Mobile Number <span class="req">*</span></label>
+                            <input type="tel" id="lf-phone" name="phone" placeholder="10-digit mobile" required inputmode="numeric" maxlength="10" autocomplete="tel">
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <label for="lf-email">Email Address</label>
+                        <input type="email" id="lf-email" name="email" placeholder="your@email.com" autocomplete="email">
+                    </div>
+                    <div class="form-field">
+                        <label for="lf-course">Interested Course</label>
+                        <select id="lf-course" name="course">
+                            <option value="">— Select a course —</option>
+                            <option value="java-full-stack">Java Full Stack Development</option>
+                            <option value="python-full-stack">Python Full Stack Development</option>
+                            <option value="software-testing">Software Testing</option>
+                            <option value="data-science">Data Science & Machine Learning</option>
+                            <option value="data-analytics">Data Analytics</option>
+                            <option value="mern-stack">MERN Full Stack Development</option>
+                            <option value="not-sure">Not sure yet — help me choose</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn--accent btn--full">Book My Free Demo →</button>
+                    <p class="lead-card__note">🔒 Your data is safe. We never spam.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ STATS BAR ═══ -->
+<section class="stats" id="stats">
+    <div class="container stats__grid">
+        <div class="stat-item" data-reveal>
+            <span class="stat-item__number" data-count="25000">0</span><span class="stat-item__plus">+</span>
+            <span class="stat-item__label">Students Trained</span>
+        </div>
+        <div class="stat-item" data-reveal>
+            <span class="stat-item__number" data-count="96">0</span><span class="stat-item__plus">%</span>
+            <span class="stat-item__label">Placement Rate</span>
+        </div>
+        <div class="stat-item" data-reveal>
+            <span class="stat-item__number" data-count="14">0</span><span class="stat-item__plus">+</span>
+            <span class="stat-item__label">Years of Excellence</span>
+        </div>
+        <div class="stat-item" data-reveal>
+            <span class="stat-item__number" data-count="4">0</span><span class="stat-item__plus">.8★</span>
+            <span class="stat-item__label">Google Rating</span>
+        </div>
+        <div class="stat-item" data-reveal>
+            <span class="stat-item__number" data-count="500">0</span><span class="stat-item__plus">+</span>
+            <span class="stat-item__label">Hiring Partners</span>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ COURSES ═══ -->
+<section class="courses" id="courses">
+    <div class="container">
+        <div class="section-header" data-reveal>
+            <span class="section-tag">Our Programmes</span>
+            <h2 class="section-title">Industry-Ready Courses</h2>
+            <p class="section-sub">Choose your path to a high-growth tech career. Every course includes live training, real projects, and placement support.</p>
+        </div>
+
+        <div class="courses__grid">
+            <!-- Card 1 -->
+            <div class="course-card" data-reveal>
+                <div class="course-card__icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="url(#javaGrad)"/><text x="50%" y="55%" text-anchor="middle" fill="#fff" font-size="14" font-weight="800" dy=".35em">J</text><defs><linearGradient id="javaGrad" x1="0" y1="0" x2="40" y2="40"><stop stop-color="#f97316"/><stop offset="1" stop-color="#ea580c"/></linearGradient></defs></svg>
+                </div>
+                <span class="course-card__tag course-card__tag--placement">Placement Oriented</span>
+                <h3 class="course-card__title">Java Full Stack Development</h3>
+                <p class="course-card__desc">Core Java → Spring Boot → Hibernate → REST APIs → MySQL → React basics → deployable capstone projects.</p>
+                <div class="course-card__meta">
+                    <span>⏱ 6 Months</span>
+                    <span>📍 Classroom + Online</span>
+                </div>
+                <a class="course-card__link" href="#lead-form">Explore Course →</a>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="course-card" data-reveal>
+                <div class="course-card__icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="url(#pyGrad)"/><text x="50%" y="55%" text-anchor="middle" fill="#fff" font-size="14" font-weight="800" dy=".35em">Py</text><defs><linearGradient id="pyGrad" x1="0" y1="0" x2="40" y2="40"><stop stop-color="#3b82f6"/><stop offset="1" stop-color="#1d4ed8"/></linearGradient></defs></svg>
+                </div>
+                <span class="course-card__tag course-card__tag--placement">Placement Oriented</span>
+                <h3 class="course-card__title">Python Full Stack Development</h3>
+                <p class="course-card__desc">Python → Django/Flask → REST APIs → PostgreSQL → HTML/CSS/JS → React basics → placement capstone.</p>
+                <div class="course-card__meta">
+                    <span>⏱ 6 Months</span>
+                    <span>📍 Classroom + Online</span>
+                </div>
+                <a class="course-card__link" href="#lead-form">Explore Course →</a>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="course-card" data-reveal>
+                <div class="course-card__icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="url(#testGrad)"/><text x="50%" y="55%" text-anchor="middle" fill="#fff" font-size="14" font-weight="800" dy=".35em">QA</text><defs><linearGradient id="testGrad" x1="0" y1="0" x2="40" y2="40"><stop stop-color="#10b981"/><stop offset="1" stop-color="#059669"/></linearGradient></defs></svg>
+                </div>
+                <span class="course-card__tag course-card__tag--placement">Placement Oriented</span>
+                <h3 class="course-card__title">Software Testing</h3>
+                <p class="course-card__desc">Manual Testing → Selenium 4.0 → TestNG → Jira → API Testing → CI/CD basics → real QA workflows.</p>
+                <div class="course-card__meta">
+                    <span>⏱ 4 Months</span>
+                    <span>📍 Classroom + Online</span>
+                </div>
+                <a class="course-card__link" href="#lead-form">Explore Course →</a>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="course-card" data-reveal>
+                <div class="course-card__icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="url(#dsGrad)"/><text x="50%" y="55%" text-anchor="middle" fill="#fff" font-size="12" font-weight="800" dy=".35em">DS</text><defs><linearGradient id="dsGrad" x1="0" y1="0" x2="40" y2="40"><stop stop-color="#8b5cf6"/><stop offset="1" stop-color="#6d28d9"/></linearGradient></defs></svg>
+                </div>
+                <span class="course-card__tag course-card__tag--data">Data Science</span>
+                <h3 class="course-card__title">Data Science & Machine Learning</h3>
+                <p class="course-card__desc">Python → Statistics → ML Algorithms → Pandas → Visualization → Model Building → Applied projects.</p>
+                <div class="course-card__meta">
+                    <span>⏱ 6 Months</span>
+                    <span>📍 Classroom + Online</span>
+                </div>
+                <a class="course-card__link" href="#lead-form">Explore Course →</a>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="course-card" data-reveal>
+                <div class="course-card__icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="url(#daGrad)"/><text x="50%" y="55%" text-anchor="middle" fill="#fff" font-size="12" font-weight="800" dy=".35em">DA</text><defs><linearGradient id="daGrad" x1="0" y1="0" x2="40" y2="40"><stop stop-color="#ec4899"/><stop offset="1" stop-color="#db2777"/></linearGradient></defs></svg>
+                </div>
+                <span class="course-card__tag course-card__tag--data">Analytics</span>
+                <h3 class="course-card__title">Data Analytics</h3>
+                <p class="course-card__desc">Excel → SQL → Python basics → Power BI Dashboards → Reporting Workflows → Business Intelligence.</p>
+                <div class="course-card__meta">
+                    <span>⏱ 4 Months</span>
+                    <span>📍 Classroom + Online</span>
+                </div>
+                <a class="course-card__link" href="#lead-form">Explore Course →</a>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="course-card" data-reveal>
+                <div class="course-card__icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="url(#mernGrad)"/><text x="50%" y="55%" text-anchor="middle" fill="#fff" font-size="10" font-weight="800" dy=".35em">MERN</text><defs><linearGradient id="mernGrad" x1="0" y1="0" x2="40" y2="40"><stop stop-color="#06b6d4"/><stop offset="1" stop-color="#0891b2"/></linearGradient></defs></svg>
+                </div>
+                <span class="course-card__tag course-card__tag--special">Specialized</span>
+                <h3 class="course-card__title">MERN Full Stack Development</h3>
+                <p class="course-card__desc">React → Node.js → Express → MongoDB → REST APIs → Redux → Deployment → Portfolio projects.</p>
+                <div class="course-card__meta">
+                    <span>⏱ 5 Months</span>
+                    <span>📍 Classroom + Online</span>
+                </div>
+                <a class="course-card__link" href="#lead-form">Explore Course →</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ WHY CHOOSE US ═══ -->
+<section class="why-us" id="why-us">
+    <div class="container">
+        <div class="section-header" data-reveal>
+            <span class="section-tag">Why Students Choose Us</span>
+            <h2 class="section-title">The Kiran Academy Advantage</h2>
+            <p class="section-sub">We don't just teach — we make you job-ready, interview-confident, and industry-relevant.</p>
+        </div>
+
+        <div class="why-us__grid">
+            <div class="why-card" data-reveal>
+                <div class="why-card__icon">👨‍🏫</div>
+                <h3>Industry Trainers</h3>
+                <p>Learn from professionals who work at top MNCs. Real-world experience, not textbook theory.</p>
+            </div>
+            <div class="why-card" data-reveal>
+                <div class="why-card__icon">👥</div>
+                <h3>Small Batches</h3>
+                <p>Maximum 25 students per batch. Your trainer knows your name and reviews your code personally.</p>
+            </div>
+            <div class="why-card" data-reveal>
+                <div class="why-card__icon">💼</div>
+                <h3>Placement Support</h3>
+                <p>Dedicated placement cell. Resume building, mock interviews, and direct company referrals until you're hired.</p>
+            </div>
+            <div class="why-card" data-reveal>
+                <div class="why-card__icon">🏗️</div>
+                <h3>Real Projects</h3>
+                <p>Build 5+ industry-grade projects. Deploy them. Show them in interviews. Not toy assignments.</p>
+            </div>
+            <div class="why-card" data-reveal>
+                <div class="why-card__icon">🎯</div>
+                <h3>Job-Ready Curriculum</h3>
+                <p>Updated every quarter based on what companies are actually hiring for. No outdated syllabi.</p>
+            </div>
+            <div class="why-card" data-reveal>
+                <div class="why-card__icon">🏢</div>
+                <h3>4 Branches + Online</h3>
+                <p>Karve Nagar, Hadapsar, Chinchwad, Nagpur — or join live online from anywhere in India.</p>
+            </div>
+            <div class="why-card" data-reveal>
+                <div class="why-card__icon">🎤</div>
+                <h3>Mock Interviews</h3>
+                <p>15+ mock interview rounds covering technical, coding, project deep-dives, and HR rounds.</p>
+            </div>
+            <div class="why-card" data-reveal>
+                <div class="why-card__icon">📜</div>
+                <h3>Certification</h3>
+                <p>Industry-recognized course completion certificate. Internship certificates for college students.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ SUCCESS STORIES / TESTIMONIALS ═══ -->
+<section class="testimonials" id="success-stories">
+    <div class="container">
+        <div class="section-header" data-reveal>
+            <span class="section-tag">Success Stories</span>
+            <h2 class="section-title">Our Students, Our Pride</h2>
+            <p class="section-sub">From freshers to full-time developers — hear from alumni who transformed their careers.</p>
+        </div>
+
+        <div class="testimonials__carousel" id="testimonialCarousel">
+            <div class="testimonials__track">
+                <div class="testimonial-card">
+                    <div class="testimonial-card__stars">★★★★★</div>
+                    <p class="testimonial-card__quote">"I was a mechanical engineering graduate with zero coding experience. In 5 months at Kiran Academy, I learned Java Full Stack and got placed at TCS with a 4.5 LPA package. The trainers are incredible!"</p>
+                    <div class="testimonial-card__author">
+                        <div class="testimonial-card__avatar">RK</div>
+                        <div>
+                            <strong>Rahul Kamble</strong>
+                            <span>Java Developer at TCS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-card__stars">★★★★★</div>
+                    <p class="testimonial-card__quote">"The Python Full Stack course completely changed my career. Within 4 months of completing the course, I received 3 job offers. The mock interviews prepared me really well for the technical rounds."</p>
+                    <div class="testimonial-card__author">
+                        <div class="testimonial-card__avatar">PS</div>
+                        <div>
+                            <strong>Priya Sharma</strong>
+                            <span>Python Developer at Infosys</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-card__stars">★★★★★</div>
+                    <p class="testimonial-card__quote">"I chose the Software Testing course and it was the best decision. The practical approach with real tools like Selenium and Jira made me job-ready. Got placed at Cognizant within 2 months!"</p>
+                    <div class="testimonial-card__author">
+                        <div class="testimonial-card__avatar">AM</div>
+                        <div>
+                            <strong>Amit Mane</strong>
+                            <span>QA Engineer at Cognizant</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-card__stars">★★★★★</div>
+                    <p class="testimonial-card__quote">"Data Science seemed intimidating initially, but the structured curriculum and supportive trainers at Kiran Academy made it smooth. Now working as a Data Analyst at Wipro. Grateful forever!"</p>
+                    <div class="testimonial-card__author">
+                        <div class="testimonial-card__avatar">SJ</div>
+                        <div>
+                            <strong>Sneha Jadhav</strong>
+                            <span>Data Analyst at Wipro</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-card__stars">★★★★★</div>
+                    <p class="testimonial-card__quote">"The MERN stack course gave me hands-on experience with React and Node.js. Built 3 full projects during the course. Within weeks of completing, I was working at a startup with a great package."</p>
+                    <div class="testimonial-card__author">
+                        <div class="testimonial-card__avatar">VD</div>
+                        <div>
+                            <strong>Varun Deshmukh</strong>
+                            <span>Full Stack Developer at Accenture</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-card__stars">★★★★★</div>
+                    <p class="testimonial-card__quote">"Being from a non-IT background, I was worried. But the small batch size meant the trainer could give me personal attention. Went from knowing nothing to becoming a Java developer in 6 months!"</p>
+                    <div class="testimonial-card__author">
+                        <div class="testimonial-card__avatar">NK</div>
+                        <div>
+                            <strong>Neha Kulkarni</strong>
+                            <span>Software Engineer at Capgemini</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials__controls">
+                <button class="carousel-btn carousel-btn--prev" id="carouselPrev" aria-label="Previous testimonial">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M12 4L6 10L12 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <div class="carousel-dots" id="carouselDots"></div>
+                <button class="carousel-btn carousel-btn--next" id="carouselNext" aria-label="Next testimonial">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M8 4L14 10L8 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ PLACEMENT PARTNERS ═══ -->
+<section class="partners" id="placements">
+    <div class="container">
+        <div class="section-header" data-reveal>
+            <span class="section-tag">Placement Partners</span>
+            <h2 class="section-title">Where Our Students Work</h2>
+            <p class="section-sub">500+ companies hire from The Kiran Academy. Our alumni work at leading IT firms across India.</p>
+        </div>
+
+        <div class="partners__marquee" data-reveal>
+            <div class="marquee-track">
+                <div class="partner-logo">TCS</div>
+                <div class="partner-logo">Infosys</div>
+                <div class="partner-logo">Wipro</div>
+                <div class="partner-logo">Cognizant</div>
+                <div class="partner-logo">Accenture</div>
+                <div class="partner-logo">Capgemini</div>
+                <div class="partner-logo">HCLTech</div>
+                <div class="partner-logo">Tech Mahindra</div>
+                <div class="partner-logo">LTIMindtree</div>
+                <div class="partner-logo">Persistent</div>
+                <div class="partner-logo">Mphasis</div>
+                <div class="partner-logo">Zensar</div>
+                <div class="partner-logo">Cyient</div>
+                <div class="partner-logo">KPIT</div>
+                <div class="partner-logo">Harbinger</div>
+                <!-- Duplicate for seamless loop -->
+                <div class="partner-logo">TCS</div>
+                <div class="partner-logo">Infosys</div>
+                <div class="partner-logo">Wipro</div>
+                <div class="partner-logo">Cognizant</div>
+                <div class="partner-logo">Accenture</div>
+                <div class="partner-logo">Capgemini</div>
+                <div class="partner-logo">HCLTech</div>
+                <div class="partner-logo">Tech Mahindra</div>
+                <div class="partner-logo">LTIMindtree</div>
+                <div class="partner-logo">Persistent</div>
+                <div class="partner-logo">Mphasis</div>
+                <div class="partner-logo">Zensar</div>
+                <div class="partner-logo">Cyient</div>
+                <div class="partner-logo">KPIT</div>
+                <div class="partner-logo">Harbinger</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ BRANCHES / CAMPUS ═══ -->
+<section class="branches" id="branches">
+    <div class="container">
+        <div class="section-header" data-reveal>
+            <span class="section-tag">Our Campuses</span>
+            <h2 class="section-title">4 Branches Across Maharashtra</h2>
+            <p class="section-sub">Visit the nearest branch for a free campus tour, or join live online from anywhere.</p>
+        </div>
+
+        <div class="branches__grid">
+            <div class="branch-card" data-reveal>
+                <div class="branch-card__icon">📍</div>
+                <h3>Karve Nagar, Pune</h3>
+                <p>4th Floor, Park Plaza, above Birla Super Market, Sramik Vasahat, Karvenagar</p>
+                <a href="tel:+918888809416" class="branch-card__phone">📞 +91 8888809416</a>
+            </div>
+            <div class="branch-card" data-reveal>
+                <div class="branch-card__icon">📍</div>
+                <h3>Hadapsar, Pune</h3>
+                <p>Pune–Solapur Rd, above Maharashtra Electronics, Hadapsar Gaon</p>
+                <a href="tel:+919673107070" class="branch-card__phone">📞 +91 9673107070</a>
+            </div>
+            <div class="branch-card" data-reveal>
+                <div class="branch-card__icon">📍</div>
+                <h3>Chinchwad, Pune</h3>
+                <p>Office 31B, Chinchwad Station Rd, above Dwarkadas Cloth Store</p>
+                <a href="tel:+918857055009" class="branch-card__phone">📞 +91 8857055009</a>
+            </div>
+            <div class="branch-card" data-reveal>
+                <div class="branch-card__icon">📍</div>
+                <h3>Nagpur</h3>
+                <p>190/A, Mankapur Ring Rd, near Chatrapati Hall, Chatrapati Nagar</p>
+                <a href="tel:+919529204783" class="branch-card__phone">📞 +91 9529204783</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ FULL-WIDTH CTA ═══ -->
+<section class="cta-section" id="cta-section">
+    <div class="container cta-section__inner">
+        <div class="cta-section__copy" data-reveal>
+            <h2>Ready to Start Your Tech Career?</h2>
+            <p>Book a free demo class today — no fees, no commitment. Experience our teaching style firsthand and get a personalized career roadmap.</p>
+            <div class="cta-section__buttons">
+                <a class="btn btn--accent btn--lg" href="#lead-form">Book Free Demo →</a>
+                <a class="btn btn--white" href="tel:+918888809416">📞 Call Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="site-footer" id="contact">
+    <div class="container">
+        <div class="footer__grid">
+            <div class="footer__brand">
+                <div class="brand">
+                    <span class="brand__icon">K</span>
+                    <span class="brand__text">The Kiran<br><small>Academy</small></span>
+                </div>
+                <p>Pune's #1 job-ready IT training institute since 2012. Transforming careers through practical, industry-aligned education.</p>
+                <div class="footer__socials">
+                    <a href="https://www.facebook.com/javabykiran/" target="_blank" rel="noopener" aria-label="Facebook">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    </a>
+                    <a href="https://www.youtube.com/@KiranAcademy-Official" target="_blank" rel="noopener" aria-label="YouTube">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    </a>
+                    <a href="https://www.instagram.com/kiranacademy.official/" target="_blank" rel="noopener" aria-label="Instagram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/company/javabykirantraining/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer__links">
+                <h4>Courses</h4>
+                <ul>
+                    <li><a href="#courses">Java Full Stack</a></li>
+                    <li><a href="#courses">Python Full Stack</a></li>
+                    <li><a href="#courses">Software Testing</a></li>
+                    <li><a href="#courses">Data Science</a></li>
+                    <li><a href="#courses">Data Analytics</a></li>
+                    <li><a href="#courses">MERN Stack</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#placements">Placements</a></li>
+                    <li><a href="#success-stories">Success Stories</a></li>
+                    <li><a href="#why-us">Why Choose Us</a></li>
+                    <li><a href="#branches">Our Branches</a></li>
+                    <li><a href="#lead-form">Book Demo</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__contact">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li>📞 <a href="tel:+918888809416">+91 8888809416</a></li>
+                    <li>📞 <a href="tel:+919673107070">+91 9673107070</a></li>
+                    <li>📞 <a href="tel:+918857055009">+91 8857055009</a></li>
+                    <li>💬 <a href="https://wa.me/918888809416" target="_blank" rel="noopener">WhatsApp Us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <p>&copy; 2012–2026 The Kiran Academy. All rights reserved.</p>
+            <p>Made with ❤️ in Pune, India</p>
+        </div>
+    </div>
+</footer>
+
+<!-- WhatsApp Floating Button -->
+<a class="wa-float" href="https://wa.me/918888809416?text=Hi%2C+I+want+to+know+more+about+courses" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
